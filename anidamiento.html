@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="anidamiento.css" rel="stylesheet">
+</head>
+<body>
+    <h2>título de página en h2</h2>
+    <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors">selectores css</a>
+    <br>
+    <a href="https://lenguajecss.com/postcss/plugins/css-nesting/">nested css</a>
+    <div id="container">
+        <div id="caja1">
+            <div id="cajadetalle1"><h2>título de entrada 1</h2>
+                <div id="contenido1" class="contenido">
+                    <p>parrafo directo hijo directo con > se aplica el formato</p>
+                    <div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    
+                   <div> <p class="warning">
+                        Texto de warning de entrada 1
+                        <div><p>avisa al administrador</p></div>
+                    </p>
+                </div>
+                    <div><p class="error">Texto de error de entrada 1</p></div>
+                </div>
+                <div id="enlaces">
+                    <a href="https://www.elpais.es">ver noticias</a>
+                    <a href="https://www.elmundo.es">seguir leyendo</a>
+                </div>
+            </div>
+        </div>
+        <div id="caja2">
+            <div id="cajadetalle2"><h2>título de entrada 2</h2>
+                <div id="contenido2" class="contenido">Texto de contenido entrada 2</div>
+            </div>
+        </div>
+        <div id="caja3">
+            <div id="cajadetalle3"><h2>título de entrada 3</h2>
+                <div id="contenido3" class="contenido">Texto de contenido entrada 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

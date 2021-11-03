@@ -1,0 +1,65 @@
+*{
+   /* margin-left: 20px;*/
+}
+
+/*selector de etiqueta*/
+div{
+    border:5px solid red;
+}
+
+/*selector de id*/
+#contenido1{
+    background-color: brown;
+}
+
+/*selector de clase*/
+.contenido{
+    background-color: aqua;
+}
+
+div h2{ /*aplica formato a h2 que están dentro de div*/
+    text-transform: uppercase;
+}
+
+/*anidamiento de selectores con css nativo*/
+#contenido1 .warning{
+    color:orange;
+}
+#contenido1 .error{
+    color:red;
+}
+
+/* anidamiento de selectores con nested css : preprocesadores de css : scss,sass,less*/
+/*#contenido{
+   
+  & .warning{color:orange}
+}
+*/
+
+/* selector por id, selector de etiqueta, pseudoselector child, pseudo selector line*/
+#contenido1 p:first-child:first-line{
+    color:yellow;
+}
+
+/*selector que únicamente aplica formato a hijos directos*/
+#contenido1 >  p{
+    text-decoration: underline;
+}
+
+#container div#caja3:last-child >div{
+    background-color: darkgreen;
+}
+
+/*pseudoselectores en enlaces*/
+#enlaces a:hover{
+    font-size: 2em;
+}
+#enlaces a:link, #enlaces a:visited{
+    font-style: italic;
+    color:green;
+}
+a[href="https://www.elpais.es"]{/*selector por atributo*/
+    border:2px solid blue;
+    margin:5px;
+}
+
